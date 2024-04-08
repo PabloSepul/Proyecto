@@ -325,6 +325,11 @@ h2 {
 }
 
 .footer {
+    background-color: #13462E;
+    padding: 100px 0;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
 }
@@ -444,8 +449,7 @@ h2 {
         flex-direction: column;
         text-align: center;
     }
-
-    }
+}
 
 
 

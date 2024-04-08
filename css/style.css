@@ -10,6 +10,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url(../img/fondo4.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 img {

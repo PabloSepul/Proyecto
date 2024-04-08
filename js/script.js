@@ -13,7 +13,7 @@ loadMoreBtn.onclick = () => {
 }
 
 
-///cariteishon
+///carriteishon
 const carrito = document.getElementById('carrito');
 const elementos1 = document.getElementById('lista-1');
 const lista = document.querySelector('#lista-carrito tbody');

@@ -8,11 +8,7 @@
 }
 
 body {
-    background-image: url(../img/fondo4.png);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-color: rgb(rgb(1rgb(38, 160, 38)6, 76), green, rgb(8, 8, 60));
 }
 
 .container-form{

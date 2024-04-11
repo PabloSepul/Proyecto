@@ -10,10 +10,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(../img/fondo4.png);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
 }
 
 img {
@@ -163,6 +159,11 @@ span {
 }
 
 .header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-imgf {
     flex-basis: 50%;
     text-align: center;
 }
@@ -353,6 +354,8 @@ h2 {
 .link a:hover {
     color: #9BCE21;
 }
+
+
 
 @media (max-width:991px) {
 

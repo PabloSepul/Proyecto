@@ -94,7 +94,8 @@ body{
     margin-bottom: 1rem;
 }
 .header--title{
-    color:rgba(113,99,186,255);    
+    color:#008b8b;  
+    font-family: 'Lato';  
 }
 .user--info{
     display: flex;
@@ -217,27 +218,36 @@ body{
     background: blue;
 }
 
-
+.main--title{
+    color:#008b8b;
+    font-family: 'Lato';
+}
 .tabular--wrapper{
     background: #fff;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 2rem;
+    
+    
 }
 .table-container {
     width: 100%;
+    color:#008b8b;
+    font-family: 'Lato';
 }
 table{
     width: 100%;
     border-collapse: collapse;
+    
 }
 thead{
-    background: indigo;
+    background: aquamarine;
     color:#fff;
 }
 th{
     padding: 15px;
     text-align: left;
+    color:#008b8b;
 }
 
 tbody{
@@ -252,13 +262,13 @@ tr:nth-child(even){
     background: #fff;
 }
 tfoot{
-    background: indigo;
+    background: aquamarine;
     font-weight: bold;
     color:#fff;
 }
 tfoot td{
     padding: 15px;
-    color:#fff;
+    color:#008b8b;
 }
 .table-container button{
     color:green;
@@ -266,5 +276,107 @@ tfoot td{
     cursor: pointer;
 }
 
+/* ksjdfkjsdfjsdk */ 
+
+.container {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid aquamarine;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color:aquamarine;
+    color: green;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.estadisticas {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+
+h1 {
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.stat {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    font-family: 'Lato';
+}
+
+.stat h2 {
+    color: #333;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
 
+
+.value {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight:600;
+    color: #008b8b;
+    text-align: center;
+}

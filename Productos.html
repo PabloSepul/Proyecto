@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuarios</title>
-    <link rel="stylesheet" href="css/stats.css"/>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+    <title>Productos</title>
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo"></div>
@@ -20,20 +20,27 @@
                 </a>
             </li>
             <li>
+                
                 <a href="Usuarios.html">
-                    <i class="fas fa-user"></i>
+                    <i class="fa-solid fa-circle-user"></i>
                     <span>Usuarios</span>
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fas fa-chart-bar"></i>
+                <a href="Productos.html">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Productos</span>
+                </a>
+            </li>
+            <li>
+                <a href="Estadisticas.html">
+                    <i class="fa-solid fa-chart-simple"></i>
                     <span>Estadísticas</span>
                 </a>
             </li>
                         
             <li>
-                <a href="#">
+                <a href="Calificaciones.html">
                     <i class="fas fa-star"></i>
                     <span>Calificaciones</span>
                 </a>
@@ -41,145 +48,37 @@
             
             <li>
                 <a href="#">
-                    <i class="fas fa-sign-out-alt"></i>
+                    <i class="fa-solid fa-door-open"></i>
                     <span>Cerrar sesión</span>
                 </a>
             </li>
         </ul>
     </div>
-    
+
     <div class="main--content">
         <div class="header--wrapper">
             <div class="header--title">
                 <span>Primary</span>
                 <h2>Dashboard</h2>
             </div>
-            <div class="user--info">
-                <div class="searh--box">
-                <i class="fa-solid fa-search"></i>                
-                <input type="text" placeholder="Buscar"/>
-            </div>
+            <div class="user--info">                
             <img src="img/perfil.png" alt="">
         </div>
     </div>
-
-    
-    <div class="tabular--wrapper">
-        <h3 class="main--title">Datos de los Usuarios</h3>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fecha de creación</th>
-                        <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th>Alias</th>
-                        <th>Número de Teléfono</th>
-                        <th>Dirección</th>
-                        <th>Tipo de Usuario</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                09-04-2024
-                            </td>
-                            <td>Pablo Benjamín</td>
-                            <td>Sepulveda Daza</td>
-                            <td>Spaña</td>
-                            <td>+56934657777</td>
-                            <td>Los chorrillanos 98, San Pedro</td>
-                            <td>Administrador</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Matías Alejandro</td>
-                            <td>Araneda Ramírez</td>
-                            <td>KineLead</td>
-                            <td>+56998404533</td>
-                            <td>Avenida Siempreviva 77, Lota</td>
-                            <td>Administrador</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Samuel Eliazar</td>
-                            <td>Reyes Poblete</td>
-                            <td>1kmanerasdmorir</td>
-                            <td>+56998404533</td>
-                            <td>Los lomotoros 91, Coronel</td>
-                            <td>Cliente</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Richard Ignacio</td>
-                            <td>Castillo Castillo</td>
-                            <td>Richard1998</td>
-                            <td>+56943098745</td>
-                            <td>Las mojojojo 21, Concepción</td>
-                            <td>Cliente</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Álvaro Juan</td>
-                            <td>Ortiz Guzmán</td>
-                            <td>Alvarito2004</td>
-                            <td>+56935647833</td>
-                            <td>Las calilas 32, Concepción</td>
-                            <td>Cliente</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Daniel Iván</td>
-                            <td>Salazar Torres</td>
-                            <td>iDiske92</td>
-                            <td>+56943546543</td>
-                            <td>Ningun Lugar 74, Concepción</td>
-                            <td>Cliente</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                08-04-2024
-                            </td>
-                            <td>Marco Andrés</td>
-                            <td>Carrillo Toledo</td>
-                            <td>MarkusCT</td>
-                            <td>+56955346522</td>
-                            <td>San Martin 322, Lota</td>
-                            <td>Cliente</td>
-                            <td><button>Editar</button></td>
-                        </tr>
-                        
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="7">Total de Usuarios: 7</td>
-                        </tr>
-                    </tfoot>                
-            </table>
+<div class="container">
+            <h1>Administración de Productos</h1>
+            <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
+                <label for="nombre">Nombre del Producto</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="descripcion">Descripción del Producto</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                <label for="precio">Precio</label>
+                <input type="number" id="precio" name="precio" required>
+                <label for="imagen">Imagen del Producto</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                <input type="submit" value="Publicar Producto">
+            </form>
         </div>
-    </div>
-    </div>
 </body>
+
 </html>

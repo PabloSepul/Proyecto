@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="formulario">
-        <h1>Inicio de sesion</h1>
+        <h1>Inicio de sesión</h1>
         <form method="post">
             <div class="username">
                 <input type="text" required>
@@ -18,14 +18,16 @@
                 <input type="password" required>
                 <label>Contraseña</label>
             </div>
-            <div class="recordar">¿Olvido su contraseña?</div>
-            <input type="submit" value="Iniciar">
-            <a href="dashboard.html">Login ADM</a>
+            <div class="recordar"></div>
+                <div class="registrarse">
+                    Olvide mi <a href="olvido.html">Contraseña</a></div>
+            <!-- Utilizamos un enlace que parece un botón y apunta a index.html -->
+            <a href="index.html" class="submit-link">Iniciar sesión</a>
             <div class="registrarse">
                 Quiero hacer el <a href="registro.html">registro</a>
             </div>
         </form>
-
     </div>
+    <a href="dashboard.html" class="esquina">ADM</a>
 </body>
 </html>

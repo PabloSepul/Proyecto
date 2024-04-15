@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body{
     display:flex;
 }
@@ -45,7 +46,7 @@ body{
     transition: all 0.5s ease-in-out;
 }
 .menu li:hover,
-.active {
+.active {                   /* SACAR */
     background: azure;
 }
 .menu a{
@@ -94,11 +95,12 @@ body{
     margin-bottom: 1rem;
 }
 .header--title{
-    color:rgba(113,99,186,255);    
+    color:#008b8b;  
+    font-family: 'Lato';  
 }
 .user--info{
     display: flex;
-    align--items: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -182,62 +184,71 @@ body{
     text-align: center;
     border-radius: 50%;
     font-size: 1.5rem;
-    background: red;
+    background: #008b8b;
 }
 .card-detail{
     font-size: 18px;
-    color: #777777;
+    color: #008b8b;
     letter-spacing: 2px;
     font-family: 'Lato';
 }
 
 
 .light-red{
-    background: rgb(251, 233, 233);
+    background: aquamarine;
 }
 .light-purple{
     background: rgb(254, 226, 254);
 }
 .light-green{
-    background: rgb(235, 254, 235);
+    background: aquamarine;
 }
 .light-blue {
     background: rgb(236, 236, 254);
 }
 .dark-red{
-    background: red;
+    background: aquamarine;
 }
 .dark-purple{
     background: purple;
 }
 .dark-green{
-    background: green;
+    background: #008b8b;
 }
 .dark-blue{
     background: blue;
 }
 
-
+.main--title{
+    color:#008b8b;
+    font-family: 'Lato';
+}
 .tabular--wrapper{
     background: #fff;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 2rem;
+    
+    
 }
 .table-container {
     width: 100%;
+    color:#008b8b;
+    font-family: 'Lato';
 }
 table{
     width: 100%;
     border-collapse: collapse;
+    
 }
 thead{
-    background: rgba(113,99,186,255);
+    background: aquamarine;
     color:#fff;
 }
 th{
     padding: 15px;
     text-align: left;
+    color:#008b8b;
 }
 
 tbody{
@@ -252,13 +263,13 @@ tr:nth-child(even){
     background: #fff;
 }
 tfoot{
-    background: rgba(113,99,186,255);
+    background: aquamarine;
     font-weight: bold;
     color:#fff;
 }
 tfoot td{
     padding: 15px;
-    color:#fff;
+    color:#008b8b;
 }
 .table-container button{
     color:green;
@@ -266,5 +277,169 @@ tfoot td{
     cursor: pointer;
 }
 
+/* ksjdfkjsdfjsdk */ 
+
+.container {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid aquamarine;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color:aquamarine;
+    color: green;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.estadisticas {
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+
+h1 {
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.stat {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    font-family: 'Lato';
+}
+
+.stat h2 {
+    color: #333;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
 
+
+.value {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight:600;
+    color: #008b8b;
+    text-align: center;
+}
+
+.sin--comentarios{
+    text-align: center;
+    font-style: italic;
+}
+
+/*  A  */
+
+@media (max-width: 900px) {
+    .sidebar {
+      width: 80px;
+      height: calc(100vh - 100px); /* Altura de la barra lateral */
+      padding: 10px;
+      overflow-y: auto; /* Agregamos una barra de desplazamiento vertical */
+      white-space: nowrap;
+      position: fixed;
+      top: 100px; /* Espacio superior para evitar la superposición con la barra superior */
+      left: 0;
+      transition: width 0.3s ease, height 0.3s ease; /* Animación de transición */
+    }
+  
+    .menu {
+      display: block; /* Cambiamos la dirección de la lista a bloque para que se deslice hacia abajo */
+    }
+  
+    .menu li {
+      display: block; /* Cambiamos la dirección de los elementos del menú a bloque */
+      margin-bottom: 10px; /* Espacio entre los elementos */
+    }
+  
+    .menu a {
+      font-size: 12px;
+    }
+  
+    .main--content {
+      padding: 0.5rem;
+      margin-left: 80px; /* Ajustamos el margen izquierdo para dejar espacio para la barra lateral */
+    }
+  
+    .payment--card {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 12px;
+    }
+  
+    .table-container {
+      overflow-x: auto;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  
+    th,
+    td {
+      padding: 10px;
+    }
+  
+    .main--title {
+      font-size: 14px;
+    }
+  }

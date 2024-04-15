@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400,600&idsplay=swap");
 
+
+@media screen and (max-width : 900px){
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +13,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body{
     display:flex;
 }
@@ -183,36 +189,36 @@ body{
     text-align: center;
     border-radius: 50%;
     font-size: 1.5rem;
-    background: red;
+    background: #008b8b;
 }
 .card-detail{
     font-size: 18px;
-    color: #777777;
+    color: #008b8b;
     letter-spacing: 2px;
     font-family: 'Lato';
 }
 
 
 .light-red{
-    background: rgb(251, 233, 233);
+    background: aquamarine;
 }
 .light-purple{
     background: rgb(254, 226, 254);
 }
 .light-green{
-    background: rgb(235, 254, 235);
+    background: aquamarine;
 }
 .light-blue {
     background: rgb(236, 236, 254);
 }
 .dark-red{
-    background: red;
+    background: aquamarine;
 }
 .dark-purple{
     background: purple;
 }
 .dark-green{
-    background: green;
+    background: #008b8b;
 }
 .dark-blue{
     background: blue;
@@ -379,4 +385,14 @@ h1 {
     font-weight:600;
     color: #008b8b;
     text-align: center;
+}
+
+.sin--comentarios{
+    text-align: center;
+    font-style: italic;
+}
+
+/*  A  */
+
+
 }

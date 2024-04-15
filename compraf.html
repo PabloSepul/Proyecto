@@ -1,33 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Compra</title>
-    <link rel="stylesheet" href="formulario.css">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/formulario.css">
+
 </head>
 <body>
-    <div class="container">
-        <h2>Formulario de Compra</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="producto">Producto:</label>
-            <select id="producto" name="producto">
-                <option value="producto1">Producto 1</option>
-                <option value="producto2">Producto 2</option>
-                <option value="producto3">Producto 3</option>
-            </select>
-            
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" required>
-            
-            <input type="submit" value="Comprar">
-        </form>
-    </div>
+
+<div class="container">
+
+    <form action="index.html">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Datos del comprador</h3>
+
+                <div class="inputBox">
+                    <span>Nombre completo :</span>
+                    <input type="text" placeholder="Matias cagarneda">
+                </div>
+                <div class="inputBox">
+                    <span>Correo :</span>
+                    <input type="email" placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div class="inputBox">
+                    <span>direccion de envio :</span>
+                    <input type="text" placeholder="Galvarino 892,San pedro,Concepcion">
+                </div>
+                <div class="inputBox">
+                    <span>Region :</span>
+                    <input type="text" placeholder="Bio-Bio">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Codigo Postal :</span>
+                        <input type="text" placeholder="430000">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">PAGO</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas aceptadas:</span>
+                    <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre tarjeta :</span>
+                    <input type="text" placeholder="Matias BigBoy">
+                </div>
+                <div class="inputBox">
+                    <span>Numeros tarjeta :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Mes de expiracion :</span>
+                    <input type="text" placeholder="Marzo">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Año de expiracion :</span>
+                        <input type="number" placeholder="2025">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <button><a href="index.html">Volver</a></button>
+
+    </form>
+</div>    
+    
 </body>
 </html>

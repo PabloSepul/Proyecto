@@ -17,3 +17,4 @@ se agregaron ventanas nuevas
 hay que borrar el js
 
 se vinculo todo
+a

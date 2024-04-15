@@ -1,6 +1,6 @@
-@import url('htttps://fonts.googleapis.com/css2? family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,42 +8,42 @@
 }
 
 body {
-    background-image: url(../img/fondo4.png);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-color: rgb(43, 34, 126);
 }
 
-.container-form{
-    width: 100%;
+.container-form {
+    width: 90%;
     max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
     margin-top: 90px;
+    padding: 0 20px; 
 }
 
 .container-form h2 {
     margin-bottom: 15px;
-    font-size: 35px;
+    font-size: 2.5rem; 
     color: white;
+    text-align: center;
 }
 
 .container-form p {
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
+    text-align: center; 
 }
 
 .container-form a {
-    font-size: 17px;
+    font-size: 1rem;
     display: inline-block;
     text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
+    width: fit-content;
+    margin: 0 auto; 
+    margin-bottom: 20px;
     color: white;
     font-weight: 700;
 }
@@ -53,35 +53,45 @@ body {
     margin-right: 10px;
 }
 
-.container-form form .campo, textarea {
+.container-form form .campo, 
+.container-form form textarea {
     width: 100%;
     padding: 15px 10px;
-    font-size: 15px;
+    font-size: 1rem;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
     border-radius: 3px;
-    outline: 0px;
+    outline: none;
 }
 
 .container-form form textarea {
-    max-width: 530px;
-    min-width: 530px;
+    max-width: 100%; 
+    min-width: auto; 
     min-height: 140px;
     max-height: 150px;
+    width: 100%; 
 }
 
 .container-form .btn-enviar {
-    padding: 15px;
-    font-size: 16px;
+    padding: 15px 30px; 
+    font-size: 1rem;
     border: none;
-    outline: 0px;
+    outline: none;
     background: orange;
     color: white;
     border-radius: 3px;
     cursor: pointer;
     transition: all 300ms ease;
+    display: block;
+    margin: 0 auto; 
 }
 
 .container-form .btn-enviar:hover {
     background: #e39403;
+}
+
+@media (min-width: 768px) {
+    .container-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

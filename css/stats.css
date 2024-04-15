@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400,600&idsplay=swap");
 
-
-@media screen and (max-width : 900px){
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -105,7 +100,7 @@ body{
 }
 .user--info{
     display: flex;
-    align--items: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -394,5 +389,12 @@ h1 {
 
 /*  A  */
 
+@media (max-width:900px) {
+
+.sidebar {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
 
 }

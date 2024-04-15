@@ -102,15 +102,6 @@ th, td {
     color: #FFFFFF;
 }
 
-.borrar {
-    background-color: #9BCE21;
-    border-radius: 50%;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    font-weight: 800;
-    cursor: pointer;
-}
-
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -159,11 +150,6 @@ span {
 }
 
 .header-img {
-    flex-basis: 50%;
-    text-align: center;
-}
-
-.header-imgf {
     flex-basis: 50%;
     text-align: center;
 }
@@ -355,16 +341,22 @@ h2 {
     color: #9BCE21;
 }
 
-
-
-@media (max-width:900px) {
+@media (max-width: 900px) {
+    .header {
+        padding: 50px 0 0 0;
+    }
 
     .menu {
         padding: 20px;
+        justify-content: space-between; /* Alinea el logotipo y el botón de menú en los extremos */
+    }
+
+    .logo {
+        display: none; /* Oculta el logotipo en dispositivos más pequeños */
     }
 
     .menu label {
-        display: initial;
+        display: initial; /* Hace visible el botón de menú en dispositivos móviles */
     }
 
     .menu .navbar {
@@ -384,81 +376,47 @@ h2 {
         display: initial;
     }
 
-    .logo {
-        display: none;
-    }
-    .menu .navbar ul li a:hover {
-        color: #FFFFFF;
-    }
-
-    .submenu:hover #carrito {
-        width: 100%;
-    }
-
-    .header {
-        padding: 50px 0 0 0;
-    }
-
-    .header-content {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header-txt {
-        margin-right: 0;
-    }
-
-    .butons {
-        justify-content: center;
-    }
-
-    .btn-1 {
-        margin-bottom: 0;
-    }
-
-    .header-img {
-        display: none;
-    }
-
     .oferts {
-        padding: 30px;
-        flex-direction: column;
+        padding: 30px; /* Reduce el relleno en dispositivos más pequeños */
+        flex-direction: column; /* Apila los elementos verticalmente */
     }
 
     .ofert-1 {
-        margin-bottom: 15px;
+        flex-basis: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+        margin-bottom: 15px; /* Añade un margen inferior para separar los elementos */
     }
 
     .products {
-        padding: 0 30px 30px 30px;
+        padding: 0 30px 30px 30px; /* Ajusta el relleno en dispositivos más pequeños */
     }
 
-    .testimonial {
-        padding: 30px;
+    .box-container {
+        margin-top: 30px; /* Reduce el margen superior en dispositivos móviles */
+        grid-template-columns: 1fr; /* Cambia la disposición a una sola columna */
+        gap: 15px; /* Reduce el espacio entre elementos */
     }
 
-    .testimonial-content {
-        margin-top: 20px;
-        flex-direction: column;
+    .box {
+        padding: 15px; /* Reduce el relleno de las cajas en dispositivos más pequeños */
     }
 
-    .testimonial-1 {
-        padding: 25px;
-        margin-bottom: 25px;
+    .box img {
+        height: auto; /* Ajusta automáticamente la altura de las imágenes */
     }
 
-    .footer {
-        padding: 30px;
+    .product-txt h3 {
+        font-size: 18px; /* Reduce el tamaño del texto en dispositivo@@s móviles */
     }
 
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
+    .product-txt p {
+        font-size: 14px; /* Reduce el tamaño del texto en dispositivos móviles */
+    }
+
+    .precio {
+        font-size: 24px; /* Reduce el tamaño del texto en dispositivos móviles */
+    }
+
+    .btn-3 {
+        margin-top: 20px; /* Ajusta el margen superior del botón en dispositivos móviles */
     }
 }
-
-
-
-
-

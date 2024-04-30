@@ -8,10 +8,16 @@
 </head>
 <body>
     <section class="form-register">
-        <h4>¿Olvidó su contraseña?</h4>
-        <input class="controls" type="password" name="nombres" id="nombres" placeholder="Ingrese su Correo">
-        <a href="mensaje.html" class="submit-link">Restablecer mi contraseña</a>
-        <p><a href="login.html">Volver</a></p>
+        <form action="mensaje.html">
+            <h4>¿Olvidó su contraseña?</h4>
+            <input class="controls" type="email" name="nombres" id="nombres" placeholder="Ingrese su Correo" required>
+                <button class="submit-link">
+                    <a>
+                        Restablecer mi contraseña
+                    </a>
+                </button>
+        </form>
+            <p><a href="login.html">Volver</a></p>
     </section>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Editar Usuarios</title>
     <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -19,14 +19,14 @@
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 
                 <a href="Usuarios.html">
                     <i class="fa-solid fa-circle-user"></i>
                     <span>Usuarios</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="Productos.html">
                     <i class="fa-solid fa-cart-plus"></i>
                     <span>Productos</span>
@@ -66,22 +66,27 @@
         </div>
     </div>
 <div class="container">
-            <h1>Publicar Producto</h1>
+            <h1>Modificar Datos de Usuarios</h1>
             <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
-                <label for="name">Nombre del Producto</label>
-                <input type="text" id="idname" name="name" placeholder="Ingrese nombre del producto" required>
-                <label for="descripcion">Descripción del Producto</label>
-                <textarea id="descripcion" name="descripcion" placeholder="Ingrese descripción del producto" required></textarea>
-                <label for="price">Precio del Producto</label>
-                <input type="number" id="idprice" name="price" placeholder="$" required>
-                <label for="image">Imagen del Producto</label>
-                <input type="file" id="idimage" name="image" accept="image/*" required>
-                <input type="submit" value="Publicar Producto">
+                <label for="name">Nombre del Cliente</label>
+                <input type="text" id="idname" name="name" placeholder="Ingrese un nombre" required>
+                <label for="lastname">Apellidos del Cliente</label>
+                <input type="text" id="idlastname" name="lastname" placeholder="Ingrese apellidos" required>
+                <label for="nick">Alias</label>
+                <input type="text" name="nick" id="idnick" placeholder="Ingrese un alias" required>
+                <label for="phone">Número de Teléfono</label>
+                <input type="number" name="phone" id="idphone" placeholder="Ingrese un número de teléfono" required>
+                <label for="address">Dirección</label>
+                <input type="text" name="adress" id="idaddress" placeholder="Ingrese una dirección" required>
+                <label for="user-type">Tipo de Usuario</label>
+                <input type="text" name="user-type" id="iduser-type" placeholder="Ingrese tipo de usuario" required>
+                <input type="date" id="iddate" name="date" required>
+                <input type="submit" value="Confirmar Cambios">
             </form>
         </div>
         <div class="link_producto">
-        
-<a href="EditarProductos.html">Editar Productos Publicados</a>
+        <a href="Usuarios.html">Volver a Usuarios</a>
+        </div>
 </body>
 
 </html>

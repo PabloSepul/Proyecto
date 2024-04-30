@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Editar Productos Publicados</title>
     <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -66,7 +66,7 @@
         </div>
     </div>
 <div class="container">
-            <h1>Publicar Producto</h1>
+            <h1>Editar Producto Registrado</h1>
             <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
                 <label for="name">Nombre del Producto</label>
                 <input type="text" id="idname" name="name" placeholder="Ingrese nombre del producto" required>
@@ -76,12 +76,11 @@
                 <input type="number" id="idprice" name="price" placeholder="$" required>
                 <label for="image">Imagen del Producto</label>
                 <input type="file" id="idimage" name="image" accept="image/*" required>
-                <input type="submit" value="Publicar Producto">
+                <input type="submit" value="Editar Producto">
             </form>
         </div>
         <div class="link_producto">
         
-<a href="EditarProductos.html">Editar Productos Publicados</a>
+<a href="dashboard.html">Volver a Dashboard</a>
 </body>
-
 </html>

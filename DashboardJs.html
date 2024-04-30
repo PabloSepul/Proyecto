@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Editar Dashboard</title>
     <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -13,7 +13,7 @@
     <div class="sidebar">
         <div class="logo"></div>
         <ul class="menu">
-            <li>
+            <li class="active">
                 <a href="Dashboard.html">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span>
@@ -26,7 +26,7 @@
                     <span>Usuarios</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="Productos.html">
                     <i class="fa-solid fa-cart-plus"></i>
                     <span>Productos</span>
@@ -66,22 +66,28 @@
         </div>
     </div>
 <div class="container">
-            <h1>Publicar Producto</h1>
+            <h1>Modificar Datos de Dashboard</h1>
             <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
-                <label for="name">Nombre del Producto</label>
-                <input type="text" id="idname" name="name" placeholder="Ingrese nombre del producto" required>
-                <label for="descripcion">Descripción del Producto</label>
-                <textarea id="descripcion" name="descripcion" placeholder="Ingrese descripción del producto" required></textarea>
-                <label for="price">Precio del Producto</label>
-                <input type="number" id="idprice" name="price" placeholder="$" required>
-                <label for="image">Imagen del Producto</label>
-                <input type="file" id="idimage" name="image" accept="image/*" required>
-                <input type="submit" value="Publicar Producto">
+                <label for="name">Nombre del Cliente</label>
+                <input type="text" id="idname" name="name" placeholder="Ingrese nombre" required>
+                <label for="trans-type">Tipo de Transacción</label>
+                <input type="text" id="idtrans-type" name="trans-type" placeholder="Ingrese tipo de transacción" required>
+                <label for="desc">Descripción</label>
+                <input type="text" id="iddesc" name="desc" placeholder="Ingrese una descripción" required>
+                <label for="amount">Monto</label>
+                <input type="text" id="idamount" name="amount" placeholder="$" required>
+                <label for="category">Categoría</label>
+                <input type="text" id="idcategory" name="category" placeholder="Ingrese una categoría" required>
+                <label for="status">Estado</label>
+                <input type="text" id="idstatus" name="status" placeholder="Ingrese estado del producto" required>
+                <label for="date">Fecha</label>
+                <input type="date" id="iddate" name="date" required>
+                <input type="submit" value="Confirmar Cambios">
             </form>
         </div>
         <div class="link_producto">
-        
-<a href="EditarProductos.html">Editar Productos Publicados</a>
+        <a href="dashboard.html">Volver a Dashboard</a>
+        </div>
 </body>
 
 </html>

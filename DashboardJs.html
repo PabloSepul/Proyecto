@@ -7,6 +7,8 @@
     <title>Editar Dashboard</title>
     <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -67,27 +69,49 @@
     </div>
 <div class="container">
             <h1>Modificar Datos de Dashboard</h1>
-            <form action="procesar_producto.php" method="post" enctype="multipart/form-data">
-                <label for="name">Nombre del Cliente</label>
-                <input type="text" id="idname" name="name" placeholder="Ingrese nombre" required>
-                <label for="trans-type">Tipo de Transacción</label>
-                <input type="text" id="idtrans-type" name="trans-type" placeholder="Ingrese tipo de transacción" required>
-                <label for="desc">Descripción</label>
-                <input type="text" id="iddesc" name="desc" placeholder="Ingrese una descripción" required>
-                <label for="amount">Monto</label>
-                <input type="text" id="idamount" name="amount" placeholder="$" required>
-                <label for="category">Categoría</label>
-                <input type="text" id="idcategory" name="category" placeholder="Ingrese una categoría" required>
-                <label for="status">Estado</label>
-                <input type="text" id="idstatus" name="status" placeholder="Ingrese estado del producto" required>
-                <label for="date">Fecha</label>
-                <input type="date" id="iddate" name="date" required>
-                <input type="submit" value="Confirmar Cambios">
+            <form action="dashboard.html" >
+                <div class="form">
+                    <div class="grupo">
+                        <label for="name">Nombre del Cliente</label>
+                        <input type="text" id="name" name="name" placeholder="Ingrese nombre" >
+                    </div>
+                    <div class="grupo">
+                        <label for="trans-type">Tipo de Transacción</label>
+                        <input type="text" id="trans-type" name="trans-type" placeholder="Ingrese tipo de transacción" >
+                    </div>
+                    <div class="grupo">
+                        <label for="desc">Descripción</label>
+                        <input type="text" id="desc" name="desc" placeholder="Ingrese una descripción" >
+                    </div>
+                    <div class="grupo">
+                        <label for="amount">Monto</label>
+                        <input type="number" id="amount" name="amount" placeholder="$" >
+                    </div>
+                    <div class="grupo">
+                        <label for="category">Categoría</label>
+                        <input type="text" id="category" name="category" placeholder="Ingrese una categoría" >
+                    </div>
+                    <div class="grupo">
+                        <label for="status">Estado</label>
+                        <input type="text" id="status" name="status" placeholder="Ingrese estado del producto" >
+                    </div>
+                    <div class="grupo">
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date" >
+                    </div>
+                    <input type="submit" onclick= 'return enviarFormularioDashboard();' value='Confirmar Cambios'>
+                    
+                </div>   
             </form>
+            <div id='error'></div>
+           
         </div>
+        
         <div class="link_producto">
+            
         <a href="dashboard.html">Volver a Dashboard</a>
+        
         </div>
+        <script src="js/form.js"></script>        
 </body>
-
 </html>

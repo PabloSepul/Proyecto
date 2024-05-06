@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400,600&idsplay=swap");
 
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -135,7 +138,24 @@ body{
     transform: scale(1.2);
 }
 
+.payment--card {
+    position: relative; /* Agregamos posición relativa para el contenedor */
+}
 
+.imagenApi {
+    width: 290px; /* Mismo ancho que las tarjetas */
+    height: 150px; /* Mismo alto que las tarjetas */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el tamaño especificado */
+    border-radius: 10px;
+}
+
+.imagenApi img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa todo el alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para cubrir todo el contenedor sin distorsión */
+    border-radius: 10px;
+    
+}
 .card--container{
     background: #fff;
     padding: 2rem;
@@ -279,6 +299,8 @@ tfoot{
 tfoot td{
     padding: 15px;
     color:#008b8b;
+    
+    
 }
 .table-container button{
     color:green;

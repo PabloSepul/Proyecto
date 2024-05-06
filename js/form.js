@@ -143,3 +143,4 @@ function enviarFormularioProductosRegistrados(){
     
     return mensajesError.length === 0;
 }
+

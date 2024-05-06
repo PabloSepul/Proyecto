@@ -57,6 +57,16 @@ img {
     display: block;
 }
 
+.profile-table td,
+.profile-table th {
+    color: #000; /* Color de texto negro */
+}
+
+.orders-table td,
+.orders-table th {
+    color: #000; /* Color de texto negro */
+}
+
 .menu .navbar ul li a:hover {
     color: #9BCE21;
 }

@@ -9,25 +9,26 @@
 <body>
     <div class="formulario">
         <h1>Inicio de sesión</h1>
-        <form method="post">
+        <form action="index.html">
             <div class="username">
-                <input type="text" required>
+                <input type="text" id ='username1'>
                 <label>Nombre de usuario</label>
             </div>
             <div class="username">
-                <input type="password" required>
+                <input type="password" id='password1'>
                 <label>Contraseña</label>
             </div>
             <div class="recordar"></div>
                 <div class="registrarse">
                     Olvide mi <a href="olvido.html">Contraseña</a></div>
-            <!-- Utilizamos un enlace que parece un botón y apunta a index.html -->
-            <a href="index.html" class="submit-link">Iniciar sesión</a>
+                <input type="submit" onclick="return enviarFormulario();" value="Enviar">
             <div class="registrarse">
                 Quiero hacer el <a href="registro.html">registro</a>
             </div>
         </form>
+        <div id='error'></div>
     </div>
     <a href="dashboard.html" class="esquina">ADM</a>
+    <script src="js/validaciones.js"></script>
 </body>
 </html>

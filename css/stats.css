@@ -25,6 +25,15 @@ body{
     transition: all 0.5s linear;
     background: aquamarine;
 }
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+
 .sidebar:hover{
     width: 240px;
     transition: 0.3s;

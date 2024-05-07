@@ -5,14 +5,14 @@ function validarRegistro() {
     const contraseña = document.getElementById('contraseña').value;
     const confirmContraseña = document.getElementById('confirmContraseña').value;
 
-    if (nombres === "") {
+    if (nombres.length <6) {
         document.getElementById('errorNombres').textContent = "Por favor, ingresa tu nombre.";
         return;
     } else {
         document.getElementById('errorNombres').textContent = "";
     }
 
-    if (apellidos === "") {
+    if (apellidos.length <6) {
         document.getElementById('errorApellidos').textContent = "Por favor, ingresa tus apellidos.";
         return;
     } else {
@@ -34,7 +34,7 @@ function validarRegistro() {
         document.getElementById('errorCorreo').textContent = "";
     }
 
-    if (contraseña === "") {
+    if (contraseña.length <6) {
         document.getElementById('errorContraseña').textContent = "Por favor, ingresa una contraseña.";
         return;
     } else {

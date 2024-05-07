@@ -47,5 +47,5 @@ function validarRegistro() {
     } else {
         document.getElementById('errorContraseña').textContent = "";
     }
-    window.location.href = "login.html";
+    window.location.href = "mensajeperfil.html";
 }

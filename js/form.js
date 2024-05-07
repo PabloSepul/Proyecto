@@ -21,27 +21,27 @@ function enviarFormularioDashboard(){
 
     var mensajesError = [];
 
-    if (nombre.value === null || nombre.value === ''){
+    if (nombre.value === null || nombre.value === '' || nombre.value.trim().length < 6){
         mensajesError.push('<p>Ingresa un nombre válido</p> ')
     }
 
-    if (tipoTransaccion.value === null || tipoTransaccion.value === ''){
+    if (tipoTransaccion.value === null || tipoTransaccion.value === ''|| tipoTransaccion.value.trim().length < 6){
         mensajesError.push('<p>Ingresa tipo de transacción</p>')
     }
 
-    if (descripcion.value === null || descripcion.value === ''){
+    if (descripcion.value === null || descripcion.value === ''|| descripcion.value.trim().length < 6){
         mensajesError.push('<p>Ingresa una descripción</p>')
     }
 
-    if (monto.value === null || monto.value === ''){
+    if (monto.value === null || monto.value === ''||monto.value< 0){
         mensajesError.push('<p>Ingresa un monto</p>')
     }
 
-    if (categoria.value === null || categoria.value === ''){
+    if (categoria.value === null || categoria.value === ''||categoria.value.trim().length < 6){
         mensajesError.push('<p>Ingresa una categoría</p>')
     }
 
-    if (estado.value === null || estado.value === ''){
+    if (estado.value === null || estado.value === ''||estado.value.trim().length < 3){
         mensajesError.push('<p>Ingresa un estado</p>')
     }
 
@@ -59,27 +59,27 @@ function enviarFormularioUsuarios(){
 
     var mensajesError = [];
 
-    if (nombre.value === null || nombre.value === ''){
+    if (nombre.value === null || nombre.value === ''||nombre.value.trim().length < 6){
         mensajesError.push('<p>Ingresa un nombre válido</p> ')
     }
 
-    if (apellido.value === null || apellido.value === ''){
+    if (apellido.value === null || apellido.value === ''||apellido.value.trim().length < 6){
         mensajesError.push('<p>Ingresa un apellido válido</p> ')
     }
     
-    if (alias.value === null || alias.value === ''){
+    if (alias.value === null || alias.value === ''||alias.value.trim().length < 3){
         mensajesError.push('<p>Ingresa un alias válido</p> ')
     }
     
-    if (telefono.value === null || telefono.value === ''){
+    if (telefono.value === null || telefono.value === ''||telefono.value< 7){
         mensajesError.push('<p>Ingresa un teléfono válido</p> ')
     }
     
-    if (direccion.value === null || direccion.value === ''){
+    if (direccion.value === null || direccion.value === ''||direccion.value.trim().length < 3){
         mensajesError.push('<p>Ingresa una dirección válida</p> ')
     }
     
-    if (tipoUsuario.value === null || tipoUsuario.value === ''){
+    if (tipoUsuario.value === null || tipoUsuario.value === ''||tipoUsuario.value.trim().length < 4){
         mensajesError.push('<p>Ingresa un tipo de usuario válido</p> ')
     }
 
@@ -97,15 +97,15 @@ function enviarFormularioProductos(){
 
     var mensajesError = [];
 
-    if (nombre.value === null || nombre.value === ''){
+    if (nombre.value === null || nombre.value === ''||nombre.value.trim().length < 4){
         mensajesError.push('<p>Ingresa un nombre válido</p> ')
     }
 
-    if (descripcion.value === null || descripcion.value === ''){
+    if (descripcion.value === null || descripcion.value === ''||descripcion.value.trim().length < 6){
         mensajesError.push('<p>Ingresa una descripción</p>')
     }
 
-    if (precio.value === null || precio.value === ''){
+    if (precio.value === null || precio.value === ''||precio.value < 0){
         mensajesError.push('<p>Ingresa un precio</p>')
     }
 
@@ -123,15 +123,15 @@ function enviarFormularioProductosRegistrados(){
 
     var mensajesError = [];
 
-    if (nombre.value === null || nombre.value === ''){
+    if (nombre.value === null || nombre.value === ''||nombre.value.trim().length < 6){
         mensajesError.push('<p>Ingresa un nombre válido</p> ')
     }
 
-    if (descripcion.value === null || descripcion.value === ''){
+    if (descripcion.value === null || descripcion.value === ''||descripcion.value.trim().length < 6){
         mensajesError.push('<p>Ingresa una descripción</p>')
     }
 
-    if (precio.value === null || precio.value === ''){
+    if (precio.value === null || precio.value === ''|| precio.value<0){
         mensajesError.push('<p>Ingresa un precio</p>')
     }
 
@@ -144,3 +144,10 @@ function enviarFormularioProductosRegistrados(){
     return mensajesError.length === 0;
 }
 
+
+
+
+
+
+
+    
